@@ -1,0 +1,41 @@
+// Get the form element
+const form = document.querySelector('form');
+
+// Add event listener to the form submission
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // Get form values
+  const name = document.querySelector('input[name="name"]').value;
+  const email = document.querySelector('input[name="email"]').value;
+  const phone = document.querySelector('input[name="phone"]').value;
+  const college = document.querySelector('input[name="college"]').value;
+  const event = document.querySelector('select[name="event"]').value;
+  const mode = document.querySelector('input[name="mode"]:checked').value;
+  const comments = document.querySelector('textarea').value;
+
+  // Basic validation
+  if (name === '' || email === '' || phone === '' || college === '') {
+    alert('Please fill in all required fields');
+    return;
+  }
+
+  // Send data to server or email
+  // For now, just log it to console
+  console.log({
+    name,
+    email,
+    phone,
+    college,
+    event,
+    mode,
+    comments,
+  });
+
+  alert('Form submitted successfully!');
+});
+
+// Add event listener to reset button
+form.addEventListener('reset', () => {
+  alert('Form reset successfully!');
+});
