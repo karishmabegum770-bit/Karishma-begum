@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interactive Student Activity Page</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+<h1>Student Interactive Web Page</h1>
+
+<marquee>Welcome to the Interactive Activity Portal</marquee>
+
+<button onclick="toggleMode()">🌙 Dark Mode</button>
+
+</header>
+
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#Student activity tracker">Student activity tracker</a>
+<a href="#result">Result</a>
+<a href="#activity">Activity</a>
+<a href="#about">About</a>
+
+</nav>
+
+
+<section id="home" class="card">
+
+<h2>Home</h2>
+
+<img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" width="80">
+
+<p>
+This webpage demonstrates HTML, CSS and JavaScript features.
+It includes layouts, fonts, colors, icons, scrolling text and
+interactive input output functions.
+</p>
+
+</section>
+<h1>Student Activity Tracker</h1>
+
+<div class="container">
+
+<h3>Today's Learning Activities</h3>
+
+<ul id="activityList">
+<li>
+HTML Practice
+<button onclick="completeTask(this)">Complete</button>
+</li>
+
+<li>
+CSS Styling Exercise
+<button onclick="completeTask(this)">Complete</button>
+</li>
+
+<li>
+JavaScript Basics
+<button onclick="completeTask(this)">Complete</button>
+</li>
+
+<li>
+Build Mini Project
+<button onclick="completeTask(this)">Complete</button>
+</li>
+
+<li>
+Revise Web Concepts
+<button onclick="completeTask(this)">Complete</button>
+</li>
+</ul>
+
+<div class="progress">
+<p id="progressText">0 / 5 Activities Completed</p>
+
+<progress id="progressBar" value="0" max="5"></progress>
+</div>
+
+<section id="result" class="card">
+
+<h2>Result</h2>
+
+<img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="70">
+
+<p id="output">Your result will appear here</p>
+
+</section>
+<div>
+<section id="activity" class="card">
+
+<h2>Activity</h2>
+
+<img src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png" width="70">
+
+<p>Enter your name and marks:</p>
+
+<input type="text" id="name" placeholder="Enter Name">
+
+<input type="number" id="marks" placeholder="Enter Marks">
+
+<button onclick="calculate()">Submit</button>
+
+</section>
+
+
+
+<section id="about" class="card">
+
+<h2>About</h2>
+
+<img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="70">
+
+<p>
+This project shows how HTML, CSS and JavaScript work together
+to create an interactive webpage with design, layout and user interaction.
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Interactive Web Project</p>
+
+</footer>
+
+</body>
+</html>
